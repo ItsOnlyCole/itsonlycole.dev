@@ -40,13 +40,6 @@ body, html {
     /* Image is royalty free from Pexels.com */
     background-image: url("images/lighter.jpeg");
 
-    /*default
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
-
     /* parrallax */
     height: 1080px;
     background-attachment: fixed;
@@ -84,10 +77,11 @@ body, html {
         translateY(-50%);
 }
 
-/* 
-For hiddenLink Class, reference .hiddenLink{} 
-in Nav Section of main.css
-*/
+.hiddenLink, .hiddenLink:focus, .hiddenLink:hover {
+    color: white;
+    outline: 0;
+    text-decoration: none;
+}
 
 .downArrowButton {
     position: relative;
