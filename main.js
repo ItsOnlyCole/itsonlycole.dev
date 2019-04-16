@@ -1,11 +1,5 @@
-/*
-    main.js
-    Created by: Cole Hemp
-    Last Modified: December 12th, 2018
-*/
-
 //Creates an array of every link on the page
-var aTag = document.getElementsByTagName("a"); //Requirement 14: Use of DOM. 3/3
+var aTag = document.getElementsByTagName("a");
 var highlight = false;
 
 
@@ -15,7 +9,7 @@ function addHoverClass (element) {
 
 function checkLinkID(link) {
     if (link.id == "homeNavLink" || link.id == "programmingNavLink" || link.id == "contentCreationNavLink" 
-        || link.id == "fitnessNavLink" || link.id == "eventCoordinationNavLink" || link.id == "contactNavLink") //Requirement 10: The use of a logical operator
+        || link.id == "fitnessNavLink" || link.id == "eventCoordinationNavLink" || link.id == "contactNavLink")
     {
         return true;
     }
@@ -26,7 +20,7 @@ function checkLinkID(link) {
 
 function checkForHighlight (link) {
     var isNavLink = checkLinkID(link);
-    isNavLink==true?highlight=true:highlight=false; //Requirement 9: The use of a ternary or conditional operator.
+    isNavLink==true?highlight=true:highlight=false;
     return highlight;
 }
 
@@ -38,6 +32,6 @@ function hightlight (link) {
 
 $(document).ready(function() {
     for(i=0; i < aTag.length; i++){
-        aTag[i].addEventListener("mouseover", hightlight(aTag[i]));  //Requirement 8: An example of changing the contents of a div when an event occurs
+        aTag[i].addEventListener("mouseover", hightlight(aTag[i]));
     }
 });
