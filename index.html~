@@ -1,4 +1,13 @@
 <!doctype html>
+<!--
+    index.html
+    Created by: Cole Hemp
+    Last Modified: December 12th, 2018
+
+    Description: This is the front page for my COP2831 Final Project.
+
+    Requirement 1: The use of comments.
+-->
 <html>
 <head>
     <title>Cole Hemp: Software Developer</title>
@@ -10,14 +19,31 @@
 
     <!--Custom CSS for Entire Website-->
     <link rel="stylesheet" href="main.css"\>
-    <!--Custom JS for Entire Website-->
+    <!--Custom JS for Entire Website--> <!--Requirement 2: The use of an external Javascript page linked properly.-->
     <script src="main.js"></script>
+    <!--Custom JS for Easter Eggs-->
+    <script src="easterEggs/easterEggs.js"></script>
+
     <!--Page Specific JS is located on the bottom of each page-->
 </head>
 <body>
+    <!--
+        Body is Split into 5 sections
+        1.) Nav (Located in Home Container)
+        2.) Home
+        3.) Bio
+        4.) Email
+        5.) Footer
+    -->
+
+
+
     <!--Home Section-->
     <div class="homeContainer">
         <!--Nav Section-->
+
+        <!--REDO THE NAV BAR TO BE MORE RESPONSIVE-->
+
         <nav>
             <div class="navContainer container">
                 <div class="row">
@@ -52,7 +78,7 @@
         <!--Home Section-->
         <div class="homeCenter">
             <h1 class="homeTitle" id="testID">Cole Hemp</h1>
-            <h3 class="homeSubTitle">Lighting the way to a better future through a passion for technology</h3>
+            <h3 class="homeSubTitle">lighting the way to a better future through a passion for technology</h3>
         </div>
         <div class="homeBottom">
             <!--Text Link and Button point to nothing. JavaScript is used to slide the page down.-->
