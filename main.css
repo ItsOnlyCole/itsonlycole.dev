@@ -9,28 +9,29 @@ body, html {
     font-size: 1em;
 }
 
-.hiddenLink, .hiddenLink:focus, .hiddenLink:hover {
+.navLink, .navLink:focus {
     color: white;
     outline: 0;
     text-decoration: none;
 }
 
+.navLink:hover {
+    color: lightseagreen;
+}
+
 .homeNavLinkContainer {
-    text-align: right;
+    text-align: left;
 }
 
 .navul {
-    padding-left: 0px;
+    text-align: right;
+    padding-right: 0px;
 }
 
 .navli {
     text-decoration: none;
     display: inline-block;
     padding-right: 10px;
-}
-
-.hoverNavLink:hover {
-    color: lightseagreen;
 }
 
 
