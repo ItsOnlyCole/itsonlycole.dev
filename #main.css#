@@ -104,10 +104,6 @@ body, html {
     transform: translateY(-50%);
     float: right;
 }
-
-.secretButton {
-    background-color: red;
-}
 /* End of Bio Section */
 
 /* Start of Styling for Email Section of index.html */
