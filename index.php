@@ -158,5 +158,20 @@
         });
         // End of Read More Script
     </script>
+
+
+    <?php
+
+	if($_POST['submit'] == "submit")
+	{
+		$emailAddress = "ColeHemp@gmail.com";
+		$senderEmailAddress = $_POST["senderEmailaddress"];
+		$emailSubject = $_POST["emailSubject"];
+		$emailBody = $_POST["emailBody"];
+		$emailHeaders = "From: " . $senderEmailAddress;
+
+		mail($emailAddress,$emailSubject,$emailBody,$emailHeaders);
+	}
+    ?>
 </body>
 </html>
