@@ -95,18 +95,18 @@
     <div class="emailContainer container-fluid">
       <h1 class="emailFormTitle">Contact Me</h1>
       <!--Form for submitting email-->
-      <form class="emailForm" action="index.html/#contactme" method="post">
+      <form class="emailForm" action="index.html#contactme" method="post">
 	<div class="form-group">
 	  <label for="email">Email Address: </label>
-	  <input type="email" class="form-control" id="email">
+	  <input type="email" class="form-control" id="email" name="senderEmailAddress">
         </div>
 	<div class="form-group">
 	  <label for="emailSubject">Subject: </label>
-	  <input type="text" class="form-control" id="emailSubject">
+	  <input type="text" class="form-control" id="emailSubject" name="emailSubject">
         </div>
         <div class="form-group">
 	  <label for="emailBody">Message: </label>
-	  <textarea class="form-control" rows="5" id="emailBody"></textarea>
+	  <textarea class="form-control" rows="5" id="emailBody" name="emailBody"></textarea>
         </div>
 	<input type="submit" class="btn btn-primary" value="Submit">
 	<input type="reset" class="btn btn-primary" value="Reset">	
@@ -143,7 +143,7 @@
     </div>
 
     <!--Page Specifc Java Script-->
-    <script> //Requirement 3: One Example of Inline Javascript
+    <script>
         // Script for page scrolling functionality | This is used for the "Read More" and "Contact" links
         $("a").on("click", function (event) {
             // Checks to see if href is link to somewhere on the same page then prevents regular link functionality
